@@ -5,8 +5,7 @@ int main(){
     setlocale(LC_ALL, "RU");
 
     double S, poluPer;
-    int Perimetr;
-    int a, b, c;
+    int a, b, c, Perimetr;
     std::cout << "Введите стороны треугольника:" << std::endl;
     std::cin >> a;
     std::cin >> b;
