@@ -4,7 +4,7 @@
 using namespace std;
 
 int main() {
-	double length, width;
+	double length, width, perimeter, area, diagonalLength;
 	setlocale(LC_ALL, "Russian");
 
 	//запрашиваем данные
@@ -14,9 +14,9 @@ int main() {
 	cin >> width;
 
 	//вычисления
-	double perimeter = 2 * (length + width);
-	double area = length * width;
-	double diagonalLength = sqrt(length * length + width * width);
+	perimeter = 2 * (length + width);
+	area = length * width;
+	diagonalLength = sqrt(length * length + width * width);
 
 	//вывод результатов
 	cout << "Периметр: " << perimeter << endl;
