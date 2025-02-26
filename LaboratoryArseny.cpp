@@ -3,10 +3,11 @@
 
 int main() {
     setlocale(LC_ALL, "RU");
+    using namespace std;
 
     double S, poluPer, Perimetr, a, b, c;
-    std::cout << "Введите стороны треугольника:" << std::endl;
-    std::cin >> a >> b >> c;
+    cout << "Введите стороны треугольника:";
+    cin >> a >> b >> c;
 
     Perimetr = a + b + c; // Нахождение периметра
     
@@ -14,14 +15,14 @@ int main() {
 
     S = sqrt(poluPer * (poluPer - a) * (poluPer - b) * (poluPer - c)); // Площадь по формуле Герона
 
-    std::cout << "Периметр:" << Perimetr << std::endl;
-    std::cout << "Площадь:" << S << std::endl;
+    cout << "Периметр:" << Perimetr << std::endl;
+    cout << "Площадь:" << S << std::endl;
 
     if ((a == b && a != c) || (b == c && b != a) || (a == c && a != b)) { //Проверка на равнобедренность
-        std::cout << "Треугольник равнобедренный" << std::endl;
+        cout << "Треугольник равнобедренный" << std::endl;
     } 
     else {
-        std::cout << "Треугольник не равнобедренный" << std::endl;
+        cout << "Треугольник не равнобедренный" << std::endl;
     }
 
     return 0;
