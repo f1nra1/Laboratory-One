@@ -17,7 +17,7 @@ int main() {
     std::cout << "Периметр:" << Perimetr << std::endl;
     std::cout << "Площадь:" << S << std::endl;
 
-    if ((a == b && a != c) || (b == c && b != a) || (a == c && a != b)) {
+    if ((a == b && a != c) || (b == c && b != a) || (a == c && a != b)) { //Проверка на равнобедренность
         std::cout << "Треугольник равнобедренный" << std::endl;
     } 
     else {
