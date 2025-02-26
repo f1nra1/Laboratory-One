@@ -15,14 +15,13 @@ int main() {
 
     S = sqrt(poluPer * (poluPer - a) * (poluPer - b) * (poluPer - c)); // Площадь по формуле Герона
 
-    cout << "Периметр:" << Perimetr << std::endl;
-    cout << "Площадь:" << S << std::endl;
+    cout << "Периметр:" << Perimetr << endl;
+    cout << "Площадь:" << S << endl;
 
     if ((a == b && a != c) || (b == c && b != a) || (a == c && a != b)) { //Проверка на равнобедренность
-        cout << "Треугольник равнобедренный" << std::endl;
-    } 
-    else {
-        cout << "Треугольник не равнобедренный" << std::endl;
+        cout << "Треугольник равнобедренный" << endl;
+    } else {
+        cout << "Треугольник не равнобедренный" << endl;
     }
 
     return 0;
