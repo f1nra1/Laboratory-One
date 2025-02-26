@@ -1,15 +1,12 @@
 #include <iostream>
 #include <cmath>
 
-int main(){
+int main() {
     setlocale(LC_ALL, "RU");
 
-    double S, poluPer;
-    int a, b, c, Perimetr;
+    double S, poluPer, Perimetr, a, b, c;
     std::cout << "Введите стороны треугольника:" << std::endl;
-    std::cin >> a;
-    std::cin >> b;
-    std::cin >> c;
+    std::cin >> a >> b >> c;
 
     Perimetr = a + b + c; // Нахождение периметра
     
@@ -20,18 +17,12 @@ int main(){
     std::cout << "Периметр:" << Perimetr << std::endl;
     std::cout << "Площадь:" << S << std::endl;
 
-    // Проверка на равнобедренность
-    if(a == b && a != c){
+    if ((a == b && a != c) || (b == c && b != a) || (a == c && a != b)) {
         std::cout << "Треугольник равнобедренный" << std::endl;
-    }  
-    else if(b == c && b != a){
-        std::cout << "Треугольник равнобедренный" << std::endl;
-    }
-    else if(a == c && a != b){
-        std::cout << "Треугольник равнобедренный" << std::endl;
-    }
-    else
+    } 
+    else {
         std::cout << "Треугольник не равнобедренный" << std::endl;
+    }
 
     return 0;
 
