@@ -14,11 +14,13 @@ int main() {
 	cin >> width;
 
     if (length <= 0 || width <= 0) {
-    	cout << "прямоугольник не существует";
+    	cout << "прямоугольник не существует" << endl;
     } else {
+      	//вычисления
     	perimeter = 2 * (length + width);
     	area = length * width;
     	diagonalLength = sqrt(length * length + width * width);
+
     	cout << "Периметр: " << perimeter << endl;
     	cout << "Площадь: " << area << endl;
     	cout << "Длина диагонали: " << diagonalLength << endl;
