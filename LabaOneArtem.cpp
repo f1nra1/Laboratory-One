@@ -13,6 +13,7 @@ int main() {
 	cout << "Введите ширину прямоугольника: ";
 	cin >> width;
 
+    //commit
     if (length <= 0 || width <= 0) {
     	cout << "прямоугольник не существует" << endl;
     } else {
