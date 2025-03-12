@@ -7,7 +7,7 @@ int main() {
 	double length, width, perimeter, area, diagonalLength;
 	setlocale(LC_ALL, "Russian");
 
-	//запрашиваем данные
+	//запрашиваем данные из терминала
 	cout << "Введите длину прямоугольника: ";
 	cin >> length;
 	cout << "Введите ширину прямоугольника: ";
