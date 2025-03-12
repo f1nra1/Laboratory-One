@@ -21,7 +21,7 @@ int main() {
     	area = length * width;
     	diagonalLength = sqrt(length * length + width * width);
 		
-		//вывод
+		//вывод)
     	cout << "Периметр: " << perimeter << endl;
     	cout << "Площадь: " << area << endl;
     	cout << "Длина диагонали: " << diagonalLength << endl;
